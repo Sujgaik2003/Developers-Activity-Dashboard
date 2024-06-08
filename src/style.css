@@ -1,0 +1,54 @@
+
+/* SummaryStatsComponent.css */
+
+.dashboard-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stats-card {
+  flex: 1;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-table {
+  flex: 1;
+}
+
+.activity-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.activity-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.activity-table td {
+  text-align: center;
+}
+
+.activity-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
