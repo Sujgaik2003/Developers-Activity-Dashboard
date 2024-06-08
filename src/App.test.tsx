@@ -1,9 +1,21 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import './App.css';
+import ActivityTable from './components/ActivityComponent';
+import SummaryStats from './components/SummaryStats';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+const App: React.FC = () => {
+  return (
+    <div className="app">
+      <h1> My Dashboard </h1>
+      <div className="charts">
+      <SummaryStats />
+      </div>
+      <ActivityTable/>
+      
+      
+    </div>
+  );
+};
+
+export default App;
