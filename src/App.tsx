@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style.css'; // Import CSS file for styling
 
-function App() {
+import SummaryStats from './components/SummaryStats';
+import ActivityComponent from './components/ActivityComponent';
+
+const SummaryStatsComponent: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="dashboard-container">
+      <h1 className="dashboard-title">Developer Dashboard</h1>
+      <div className="stats-section">
+        <div className="stats-card">
+          <SummaryStats />
+        </div>
+        <div className="activity-table">
+          <ActivityComponent />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default SummaryStatsComponent;
